@@ -1,0 +1,82 @@
+@import "fonts";
+@import "vars";
+@import "mixins";
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+  width: 100%;
+  max-width: $desktopWidth;
+  margin: 0 auto;
+  font-family: $mainFont;
+  font-size: $mainFontSize;
+  color: $mainFontColor;
+  outline: 1px solid grey;
+  @media screen and (max-width: $tableWidth) {
+    font-size: 15px;
+		.left-column, .right-column {
+      @include size(100%);
+    }
+  }
+}
+
+h1, h2, h3 {
+  text-transform: uppercase;
+}
+
+.thin {
+  font-family: $thinFont;
+}
+
+.bold {
+  font-family: $boldFont;
+}
+
+.content-wrapper {
+  @include size(100%);
+  padding: 5.859375% 4.6875% 7.8125% 5%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.left-column, .right-column {
+  @include flexColumn();
+  outline: 1px solid grey;
+}
+
+.left-column {
+  @include size(38.495%, 100%);
+}
+
+.right-column {
+  @include size(56.488%, 100%);
+}
+
+.surname {
+  padding-top: 13px;
+  padding-bottom: 70px;
+  @include flexColumn();
+  &-name-block {
+    @include flexColumn();
+    margin-top: 30px;
+    line-height: 50px;
+    text-transform: uppercase;
+    h1 {
+      font-size: 63.73px;
+      font-family: $boldFont;
+    }
+    .thin {
+      font-size: 54.2px;
+    }
+    .bold {
+      font-size: 25px;
+      margin-top: 5px;
+    }
+  }
+}
