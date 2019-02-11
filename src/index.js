@@ -1,2 +1,2 @@
-import './scss/main.scss'
+import './scss/index.scss'
 import './index.pug'

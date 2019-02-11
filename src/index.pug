@@ -9,14 +9,7 @@ html(lang="en")
    div.content-wrapper
     section.left-column
       article.surname
-        div.surname-svg-block
-          svg(width="239px" height="239px")
-            circle(r="119" cx="119.5" cy="119.5" fill="white" stroke="#3d6cb0" stroke-width="1")
-            circle(r="104.5" cx="119.5" cy="119.5" fill="#3d6cb0" stroke="#3d6cb0")
-        .surname-name-block
-          div.thin name here
-          h1 surname
-          div.bold graphic designer
+        include surname/surname.pug
       article.profile
       article.contact
       article.skills
