@@ -3,8 +3,8 @@
   height: $height;
 }
 
-@mixin flexColumn(){
+@mixin flex($direction){
   display: flex;
-  flex-direction: column;
+  flex-direction: $direction;
   align-items: center;
 }

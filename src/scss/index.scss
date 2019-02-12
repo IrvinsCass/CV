@@ -2,6 +2,7 @@
 @import "../utils/vars";
 @import "../utils/mixins";
 @import "./src/surname/surname";
+@import "./src/profile/profile";
 
 * {
     box-sizing: border-box;
@@ -25,18 +26,6 @@ body {
   }
 }
 
-h1, h2, h3 {
-  text-transform: uppercase;
-}
-
-.thin {
-  font-family: $thinFont;
-}
-
-.bold {
-  font-family: $boldFont;
-}
-
 .content-wrapper {
   @include size(100%);
   padding: 5.859375% 4.6875% 7.8125% 5%;
@@ -47,8 +36,7 @@ h1, h2, h3 {
 }
 
 .left-column, .right-column {
-  @include flexColumn();
-  outline: 1px solid grey;
+  @include flex(column);
 }
 
 .left-column {

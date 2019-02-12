@@ -1,22 +1,29 @@
 .surname {
-    padding-top: 13px;
-    padding-bottom: 70px;
-    @include flexColumn();
-    &__name-block {
-      @include flexColumn();
-      margin-top: 30px;
-      line-height: 50px;
-      text-transform: uppercase;
-      h1 {
-        font-size: 63.73px;
-        font-family: $boldFont;
-      }
-      .thin {
-        font-size: 54.2px;
-      }
-      .bold {
-        font-size: 25px;
-        margin-top: 5px;
-      }
-    }
+  padding-top: 13px;
+  padding-bottom: 70px;
+  @include flex(column);
+  outline: 1px solid grey;
+
+  &__name-elements {
+    @include flex(column);
+    margin-top: 30px;
+    line-height: 50px;
+    text-transform: uppercase;
   }
+
+  &__text-surname {
+    font-size: 63.73px;
+    font-family: $boldFont;
+  }
+
+  &__text-thin {
+    font-size: 54.2px;
+    font-family: $thinFont;
+  }
+    
+  &__text-bold {
+    font-size: 25px;
+    margin-top: 5px;
+    font-family: $boldFont;
+  }
+}
