@@ -1,4 +1,5 @@
 .surname {
+  @include size(100%);
   padding-top: 13px;
   padding-bottom: 70px;
   @include flex(column);

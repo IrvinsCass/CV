@@ -13,6 +13,7 @@
 body {
   width: 100%;
   max-width: $desktopWidth;
+  min-width: $phoneWidth;
   margin: 0 auto;
   font-family: $mainFont;
   font-size: $mainFontSize;
@@ -28,7 +29,7 @@ body {
 
 .content-wrapper {
   @include size(100%);
-  padding: 5.859375% 4.6875% 7.8125% 5%;
+  padding: 5.859375% 3.125% 7.8125% 5%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -40,9 +41,9 @@ body {
 }
 
 .left-column {
-  @include size(38.495%, 100%);
+  @include size(37.840%, 100%);
 }
 
 .right-column {
-  @include size(56.488%, 100%);
+  @include size(57.143%, 100%);
 }
