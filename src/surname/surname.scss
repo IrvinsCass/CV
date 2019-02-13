@@ -3,7 +3,6 @@
   padding-top: 13px;
   padding-bottom: 70px;
   @include flex(column);
-  outline: 1px solid grey;
 
   &__name-elements {
     @include flex(column);
@@ -13,17 +12,17 @@
   }
 
   &__text-surname {
-    font-size: 63.73px;
+    font-size: 3.9831rem;
     font-family: $boldFont;
   }
 
   &__text-thin {
-    font-size: 54.2px;
+    font-size: 3.3875rem;
     font-family: $thinFont;
   }
     
   &__text-bold {
-    font-size: 25px;
+    font-size: 1.5625rem;
     margin-top: 5px;
     font-family: $boldFont;
   }

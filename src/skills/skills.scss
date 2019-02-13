@@ -1,0 +1,60 @@
+.skills {
+  @include flex(column);
+  @include size(100%);
+  padding-bottom: 45px;
+  padding-right: 4%;
+
+  &-header {
+    @include flex(row);
+    @include size(100%);
+    justify-content: flex-start;
+
+    &__text {
+      text-transform: uppercase;
+      color: $baseColor;
+      font-family: $boldFont;
+      font-size: 2.6556rem;
+      margin-left: 11px;
+    }
+
+    &__line {
+      @include size(100%, 5px);
+      background-color: $baseColor;
+      margin-left: 8px;
+    }
+  }
+
+  &-content {
+    @include flex(column);
+    @include size(100%);
+
+    &__skill-block {
+      @include flex(column);
+      @include size(100%);
+      margin-top: 28px;
+    }
+
+    &__skill-name {
+      text-transform: uppercase;
+      font-size: 1.66rem;
+    }
+
+    &__skill-level {
+      @include flex(row);
+
+      &_blue {
+        @include size(17px);
+        border-radius: 50%;
+        background-color: $baseColor;
+        margin: 15px 5px 0 5px;
+      }
+
+      &_gray {
+        @include size(17px);
+        border-radius: 50%;
+        background-color: $emptyColor;
+        margin: 15px 5px 0 5px;
+      }
+    }
+  }
+}

@@ -1,4 +1,4 @@
-.profile {
+.contacts {
   @include flex(column);
   @include size(100%);
   padding-bottom: 45px;
@@ -25,9 +25,22 @@
   }
 
   &-content {
-    margin-top: 10px;
-    line-height: 1.2;
-    &__text_bold {
+    @include flex(column);
+    @include size(100%);
+
+    &__text-block{
+      @include flex(row, flex-end);
+      @include size(100%);
+      font-size: 1.3275rem;
+      margin-top: 40px;
+    }
+
+    &__left-text {
+      width: 33.71%;
+      min-width: 132px;
+      max-width: 160px;
+      color: $baseColor;
+      text-transform: uppercase;
       font-family: $boldFont;
     }
   }

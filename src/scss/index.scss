@@ -3,6 +3,8 @@
 @import "../utils/mixins";
 @import "./src/surname/surname";
 @import "./src/profile/profile";
+@import "./src/contacts/contacts";
+@import "./src/skills/skills";
 
 * {
     box-sizing: border-box;
@@ -20,7 +22,7 @@ body {
   color: $mainFontColor;
   outline: 1px solid grey;
   @media screen and (max-width: $tableWidth) {
-    font-size: 15px;
+    font-size: 0.9375rem;
 		.left-column, .right-column {
       @include size(100%);
     }
@@ -29,7 +31,7 @@ body {
 
 .content-wrapper {
   @include size(100%);
-  padding: 5.859375% 3.125% 7.8125% 5%;
+  padding: 5.859375% 3.125% 3.8125% 5%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -38,6 +40,7 @@ body {
 
 .left-column, .right-column {
   @include flex(column);
+  min-width: $phoneWidth;
 }
 
 .left-column {
