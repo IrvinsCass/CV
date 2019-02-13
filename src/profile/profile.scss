@@ -15,12 +15,14 @@
       font-family: $boldFont;
       font-size: 2.6556rem;
       margin-left: 11px;
+      margin-top: -10px;
     }
 
     &__line {
       @include size(100%, 5px);
       background-color: $baseColor;
       margin-left: 8px;
+      margin-top: -10px;
     }
   }
 

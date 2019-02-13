@@ -1,7 +1,7 @@
 .contacts {
   @include flex(column);
   @include size(100%);
-  padding-bottom: 45px;
+  padding-bottom: 50px;
   padding-right: 4%;
 
   &-header {
@@ -15,12 +15,14 @@
       font-family: $boldFont;
       font-size: 2.6556rem;
       margin-left: 11px;
+      margin-top: -10px;
     }
 
     &__line {
       @include size(100%, 5px);
       background-color: $baseColor;
       margin-left: 8px;
+      margin-top: -10px;
     }
   }
 
@@ -32,11 +34,11 @@
       @include flex(row, flex-end);
       @include size(100%);
       font-size: 1.3275rem;
-      margin-top: 40px;
+      margin-top: 28px;
     }
 
     &__left-text {
-      width: 33.71%;
+      width: 31%;
       min-width: 132px;
       max-width: 160px;
       color: $baseColor;
