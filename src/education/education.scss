@@ -1,0 +1,67 @@
+.education {
+  @include flex(column);
+  @include size(100%);
+  padding-bottom: 45px;
+  padding-right: 4%;
+
+  &-header {
+    @include flex(row);
+    @include size(100%);
+    justify-content: flex-start;
+
+    &__text {
+      text-transform: uppercase;
+      color: $baseColor;
+      font-family: $boldFont;
+      font-size: 2.6556rem;
+      margin-left: 11px;
+      margin-top: -10px;
+    }
+
+    &__line {
+      @include size(100%, 5px);
+      background-color: $baseColor;
+      margin-left: 8px;
+      margin-top: -10px;
+    }
+  }
+
+  &-content {
+    @include flex(row, flex-start);
+    margin-top: 10px;
+
+    &__black-dot-wrapper {
+      @include size(55px, 100%);
+      padding: 8px 20px 0 13px;
+
+      .black-dot {
+        @include size(20px);
+        border-radius: 50%;
+        background-color: $mainFontColor;
+      }
+    }
+
+    &__text-elements {
+      @include flex(column, flex-start);
+
+      .text-header{
+        @include flex(row, flex-end);
+        font-size: 26.56px;
+        margin-bottom: 7px;
+
+        &_degree {
+          text-transform: uppercase;
+          color: $baseColor;
+          font-family: $boldFont;
+          margin-right: 20px;
+        }
+      }
+
+      .university {
+        text-transform: uppercase;
+        font-size: 26.56px;
+        margin-bottom: 7px;
+      }
+    }
+  }
+}
