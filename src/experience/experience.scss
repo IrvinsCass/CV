@@ -48,6 +48,9 @@
         @include flex(row, flex-end);
         font-size: 26.56px;
         margin-bottom: 7px;
+        @media screen and (max-width: 600px) {
+          flex-wrap: wrap;
+        }
 
         &_company {
           text-transform: uppercase;
