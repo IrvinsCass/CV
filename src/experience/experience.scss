@@ -8,13 +8,14 @@
     @include flex(row);
     @include size(100%);
     justify-content: flex-start;
+    margin-bottom: 35px;
 
     &__text {
       text-transform: uppercase;
       color: $baseColor;
       font-family: $boldFont;
       font-size: 2.6556rem;
-      margin-left: 11px;
+      margin-left: 20px;
       margin-top: -10px;
     }
 
@@ -28,11 +29,11 @@
 
   &-content {
     @include flex(row, flex-start);
-    margin-top: 10px;
+    margin-bottom: 10px;
 
     &__black-dot-wrapper {
       @include size(55px, 100%);
-      padding: 8px 20px 0 13px;
+      padding: 10px 23px 0 14px;
 
       .black-dot {
         @include size(20px);
@@ -47,7 +48,7 @@
       .text-header{
         @include flex(row, flex-end);
         font-size: 26.56px;
-        margin-bottom: 7px;
+        margin-bottom: 5px;
         @media screen and (max-width: 600px) {
           flex-wrap: wrap;
         }
@@ -62,7 +63,7 @@
       .vacation {
         text-transform: uppercase;
         font-size: 26.56px;
-        margin-bottom: 7px;
+        margin-bottom: 5px;
       }
     }
   }

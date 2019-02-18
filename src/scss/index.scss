@@ -23,7 +23,6 @@ body {
   font-family: $mainFont;
   font-size: $mainFontSize;
   color: $mainFontColor;
-  outline: 1px solid grey;
   @media screen and (max-width: $tableWidth) {
     font-size: 0.9375rem;
 		.left-column, .right-column {

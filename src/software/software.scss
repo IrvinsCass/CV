@@ -8,13 +8,14 @@
     @include flex(row);
     @include size(100%);
     justify-content: flex-start;
+    margin-bottom: 18px;
 
     &__text {
       text-transform: uppercase;
       color: $baseColor;
       font-family: $boldFont;
       font-size: 2.6556rem;
-      margin-left: 11px;
+      margin-left: 20px;
       margin-top: -10px;
     }
 
@@ -33,9 +34,9 @@
     flex-wrap: wrap;
 
     .programm {
-      margin-left: 8px;
-      width: 43.4%;
-      margin-top: 30px;
+      width: 45%;
+      margin-bottom: 20px;
+      padding-left: 10px;
       @media screen and (max-width: 600px) {
         width: 100%;
         justify-content: center;
@@ -45,7 +46,7 @@
       &__name {
         text-transform: uppercase;
         font-size: 26.56px;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
       }
     }
   }
